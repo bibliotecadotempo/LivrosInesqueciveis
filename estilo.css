@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Yesteryear&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Neonderthaw&family=Yesteryear&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+    --font4: 'Yesteryear', cursive;
+    --font5: 'Neonderthaw', cursive;
+
+    --color1: #0609c5;
+    --color2: #2444E3;
+    --color3: #4224E3;
+    --color4: #1c5f9e;
+    --color5: #2480E3;
+    --color6: #24BCE3;
+    --color7: #8429E5;
+    --color8: #7083E3;
+    --color9: #000000;
+    --color10: #ffffff;
+ }
+  
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: var(--color3);
+    color: var(--color6);
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--color5), var(--color1));
+    padding-bottom: 20px;
+}
+
+header > h1 {
+    padding-top: 20px;
+    /*font-variant: small-caps;*/
+    font-family: var(--font5);
+    font-size: 6vw;
+}
+
+header >p {
+    padding-bottom: 50px;
+}
+
+div.container {
+    display:flex;
+}
+
+div.item{
+    display: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(169, 197, 235);
+}
+
+.container img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.texto {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-indent: 40px;
+    text-align: justify;
+    flex: 1;
+    }
+
+.texto >h1{
+    text-align: center;
+}
+
+.texto a{
+    color: #000000;
+    font-weight: bold;
+}
+
+nav {
+    font-size: 12px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: var(--color4);
+    display: flex;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background: var(--color6);
+    transition-duration: .7s;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--color5);
+    padding: 0;
+    list-style: none;
+    min-width: 200px;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li a {
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 4vw;
+}
+
+section.comentario {
+    background-color: var(--color2);
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+section.normal {
+    background-color: var(--color10);
+    color: black;
+}
+
+section >p {
+    padding-bottom: 2em;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.219);
+    color: var(--color10);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
+}
+
+section.imagem >p {
+    display: inline-block;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.301);
+    text-shadow: 1px 1px 0px black;
+    color: var(--color10);
+    text-align: center;
+}
+
+section#imagem1 {
+    background-image: url(image/Livro\ aberto.jpeg);
+    background-position: right center;
+    background-size: cover;
+    color: var(--color10);
+}
+
+section#imagem2 {
+    background-image: url(image/Prateleira.jpg);
+    background-position: right center;
+    background-size: cover;
+    color: var(--color10);
+    padding: 200px 0px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--color8);
+    text-align: center;
+    color: var(--color7);
+    padding: 10px;
+}
